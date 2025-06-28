@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OPEN APPS</string>
+    <string name="count_app">Total Install Apps : </string>
+    <string name="edittext_hint">APP NAME</string>
+    <string name="button_search">SEARCH</string>
+    <string name="list_appname">App Name</string>
+    <string name="list_packageapp">com.example.app</string>
+    <string name="dialog_openapp">Open App</string>
+    <string name="dialog_appinfo">App info</string>
+    <string name="toast_cannot_open">CANNOT OPEN THIS APP!</string>
+    <string name="text_package">package:</string>
+    <string name="menu_show_system">Show System Apps</string>
+    <string name="menu_exit">Exit</string>
+    <string name="exit_title">Exit</string>
+    <string name="exit_message">Are you sure you want to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>

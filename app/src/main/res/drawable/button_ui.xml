@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_enabled="false">
+        <inset
+            android:insetLeft="5dp"
+            android:insetRight="5dp"
+            android:insetTop="5dp"
+            android:insetBottom="5dp">
+            <shape>
+                <corners
+                    android:radius="10dp" />
+                <solid
+                    android:color="@color/colorAccent" />
+                <padding
+                    android:left="5dp"
+                    android:top="5dp"
+                    android:right="5dp"
+                    android:bottom="5dp" />
+            </shape>
+        </inset>
+    </item>
+    <item>
+        <ripple
+            android:color="@color/whiteThree">
+            <item>
+                <inset
+                    android:insetLeft="5dp"
+                    android:insetRight="5dp"
+                    android:insetTop="5dp"
+                    android:insetBottom="5dp">
+                    <shape>
+                        <corners
+                            android:radius="10dp" />
+                        <solid
+                            android:color="@color/colorAccent" />
+                        <padding
+                            android:left="5dp"
+                            android:top="5dp"
+                            android:right="5dp"
+                            android:bottom="5dp" />
+                    </shape>
+                </inset>
+            </item>
+        </ripple>
+    </item>
+</selector>

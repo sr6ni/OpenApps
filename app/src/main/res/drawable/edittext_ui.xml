@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    android:inset="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector>
+        <item
+            android:state_focused="true">
+            <shape>
+                <solid
+                    android:color="@color/blackFive" />
+                <stroke
+                    android:width="2.5dp"
+                    android:color="@color/colorAccent" />
+                <corners
+                    android:radius="10dp" />
+                <padding
+                    android:left="10dp"
+                    android:top="10dp"
+                    android:right="10dp"
+                    android:bottom="10dp" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+                <solid
+                    android:color="@color/blackFive" />
+                <stroke
+                    android:width="2.5dp"
+                    android:color="@color/blackThree" />
+                <corners
+                    android:radius="10dp" />
+                <padding
+                    android:left="10dp"
+                    android:top="10dp"
+                    android:right="10dp"
+                    android:bottom="10dp" />
+            </shape>
+        </item>
+    </selector>
+</inset>

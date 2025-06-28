@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/blackDefault"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/count_app"
+			android:textStyle="bold"
+			android:textSize="12sp"
+			android:layout_gravity="left|center_vertical"
+			android:id="@+id/TextTotalApps"
+			android:textColor="@color/whiteThree"
+            android:layout_marginLeft="5dp"
+			android:layout_marginBottom="5dp"/>
+
+		<EditText
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_height="58dp"
+			android:id="@+id/EditTextPackage"
+			android:hint="@string/edittext_hint"
+			android:textColor="@color/whiteDefault"
+			android:textColorHint="@color/blackThree"
+			android:textStyle="bold"
+			android:layout_marginBottom="0dp"
+			android:textSize="16sp"
+			android:singleLine="true"
+			android:lines="1"/>
+
+		<Button
+			android:layout_width="match_parent"
+			android:layout_height="58dp"
+            android:singleLine="true"
+			android:text="@string/button_search"
+			android:id="@+id/ButtonSearch"
+			android:textColor="@color/whiteDefault"
+			android:textStyle="bold"
+			android:textSize="14sp"/>
+
+	</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+	<ListView
+		android:id="@+id/AppListView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:fastScrollEnabled="false"
+        android:scrollbars="none"
+        android:paddingRight="5dp"
+		android:divider="@android:color/transparent"
+		android:dividerHeight="0dp"/>
+    
+        <id.sr.open.apps.FastScroller
+            android:id="@+id/fast_scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+    
+    </FrameLayout>
+</LinearLayout>
+

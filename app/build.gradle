@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34
+    buildToolsVersion "34.0.0"
+    
+    signingConfigs {
+    release {
+        storeFile file("/storage/emulated/0/AppProjects/New_Key_20250627_123509.keystore")
+        storePassword ".VKB!PHqNta3HxZ"
+        keyAlias "sr6ni"
+        keyPassword ".VKB!PHqNta3HxZ"
+    }
+}
+    defaultConfig {
+        applicationId "id.sr.open.apps"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+            v1SigningEnabled true
+            v2SigningEnabled true
+            v2SigningEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        buildConfig true
+    }
+    android.applicationVariants.all {
+        variant.outputs.each {
+            output.outputFileName = "app-release.apk"
+        }
+    }
+    packagingOptions {
+        doNotStrip "**/*.so"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}
